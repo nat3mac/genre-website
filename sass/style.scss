@@ -1,0 +1,33 @@
+@import "partials/normalize";
+
+$brand-primary: #004941;
+
+:root {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.splash {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.splash-content {
+	padding-bottom: 3.33rem;
+}
+
+.site-footer {
+	background: $brand-primary;
+	padding: 1rem;
+	color: white;
+}
+
+.headline {
+	font-family: 'Abel', sans-serif;
+	color: $brand-primary;
+}
+
+.hidden {
+	display: none;
+}
