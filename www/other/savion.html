@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Savion</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<link rel="stylesheet"
+	      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<style>
+		:root {
+			font-family: 'Nunito Sans', 'nunito-sans', 'Helvetica', 'helvetica', sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		@media (max-width: 440px) {
+			:root {
+				font-size: 15px;
+			}
+		}
+
+		@media (min-width: 441px) and (max-width: 720px) {
+			:root {
+				font-size: 16px;
+			}
+		}
+
+		@media (min-width: 721px) and (max-width: 1340px) {
+			:root {
+				font-size: 17px;
+			}
+		}
+
+		@media (min-width: 1341px) and (max-width: 1880px) {
+			:root {
+				font-size: 18px;
+			}
+		}
+
+		@media (min-width: 1881px) {
+			:root {
+				font-size: 19px;
+			}
+		}
+
+		.team-item {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		.team-image {
+			max-width: 100%;
+			height: auto;
+			border-radius: 50%;
+			width: 25%;
+			margin-right: 1.5rem;
+		}
+
+		@media (min-width: 721px) {
+			.team-image {
+				width: 20%;
+				max-width: 12em;
+				margin-right: 2rem;
+				margin-top: -0.125rem;
+			}
+
+			.team-item {
+				flex-basis: calc(50% - 1.5rem);
+			}
+		}
+
+		.team-name {
+			margin: 0;
+			font-size: 1.5rem;
+			font-weight: 400;
+			letter-spacing: 0.02em;
+			color: #011e41;
+		}
+
+		.team-description {
+			font-size: 1.25rem;
+			font-weight: 400;
+			letter-spacing: 0.01em;
+			color: rgba(1, 30, 65, .84);
+		}
+	</style>
+</head>
+<body>
+<div class="team-item">
+	<img src="nancy.jpg" alt="Nancy" class="team-image">
+	<div class="team-content">
+		<h3 class="team-name">Nancy Childress</h3>
+		<p class="team-description">Cessna's 1st female chief engineer with 28 years
+			of aircraft certification experience</p>
+	</div>
+</div>
+</body>
+</html>
