@@ -371,12 +371,12 @@ template {
   display: none;
 }
 
-/* line 5, /Volumes/DATA/work/genre-website/sass/style.scss */
+/* line 7, /Volumes/DATA/work/genre-website/sass/style.scss */
 :root {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", "Verdana", sans-serif;
 }
 
-/* line 8, /Volumes/DATA/work/genre-website/sass/style.scss */
+/* line 11, /Volumes/DATA/work/genre-website/sass/style.scss */
 .splash {
   display: flex;
   flex-flow: row wrap;
@@ -385,27 +385,49 @@ template {
   height: 100vh;
 }
 
-/* line 16, /Volumes/DATA/work/genre-website/sass/style.scss */
+/* line 19, /Volumes/DATA/work/genre-website/sass/style.scss */
 .splash-content {
   padding-bottom: 3.33rem;
 }
 
-/* line 20, /Volumes/DATA/work/genre-website/sass/style.scss */
+/* line 23, /Volumes/DATA/work/genre-website/sass/style.scss */
 .site-footer {
   background: #004941;
   padding: 1rem;
   color: white;
 }
 
-/* line 26, /Volumes/DATA/work/genre-website/sass/style.scss */
+/* line 29, /Volumes/DATA/work/genre-website/sass/style.scss */
 .headline {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", "Impact", sans-serif;
   color: #004941;
 }
 
-/* line 31, /Volumes/DATA/work/genre-website/sass/style.scss */
+/* line 34, /Volumes/DATA/work/genre-website/sass/style.scss */
 .hidden {
   display: none;
+}
+
+@media speech {
+  /* line 38, /Volumes/DATA/work/genre-website/sass/style.scss */
+  .no-reader {
+    display: none;
+    speak: none;
+  }
+}
+
+/* line 45, /Volumes/DATA/work/genre-website/sass/style.scss */
+.contact {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* line 52, /Volumes/DATA/work/genre-website/sass/style.scss */
+.contact > * {
+  flex-basis: 50%;
 }
 
 /*# sourceMappingURL=../www/style.map */

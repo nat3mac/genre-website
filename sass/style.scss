@@ -1,10 +1,13 @@
 @import "partials/normalize";
 
 $brand-primary: #004941;
+$copy-stack: 'Noto Sans TC', 'Verdana', sans-serif;
+$display-stack: 'Barlow Semi Condensed', 'Impact', sans-serif;
 
 :root {
-	font-family: 'Noto Sans TC', sans-serif;
+	font-family: $copy-stack;
 }
+
 .splash {
 	display: flex;
 	flex-flow: row wrap;
@@ -24,10 +27,29 @@ $brand-primary: #004941;
 }
 
 .headline {
-	font-family: 'Abel', sans-serif;
+	font-family: $display-stack;
 	color: $brand-primary;
 }
 
 .hidden {
 	display: none;
+}
+
+.no-reader {
+	@media speech {
+		display: none;
+		speak: none;
+	}
+}
+
+.contact {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 1rem;
+
+	& > * {
+		flex-basis: 50%;
+	}
 }

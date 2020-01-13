@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible"
+	      content="ie=edge">
+	<meta name="viewport"
+	      content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1">
 	<title>Genre Ltd.</title>
-	<link href="https://fonts.googleapis.com/css?family=Abel|Noto+Sans+TC:400,500&subset=chinese-traditional"
-	      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:500,600,700|Noto+Sans+TC&subset=chinese-traditional" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <section class="splash">
 	<div class="splash-content">
-		<h1 class="headline">Hello from Genre</h1>
-		<p>More coming soon</p>
+		<h1 class="headline">Redefine your Genre</h1>
+		<p>Custom-developed software solutions to rewrite your story</p>
 	</div>
 </section>
 <section class="contact">
-	<!--<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">-->
-		<!--<p class="hidden">-->
-			<!--<label>Don’t fill this out if you're human: <input name="bot-field"/></label>-->
-		<!--</p>-->
-		<!--<p>-->
-			<!--<label>Email: <input type="text" name="email"/></label>-->
-		<!--</p>-->
-		<!--<p>-->
-			<!--<label>Message: <textarea name="message"></textarea></label>-->
-		<!--</p>-->
-		<!--<p>-->
-			<!--<button type=”submit”>Send</button>-->
-		<!--</p>-->
-	<!--</form>-->
+	<div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1093.3895284624014!2d114.2109323138222!3d22.42524717584011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040899d71552b9%3A0x56335b5fe5a3bb7f!2sIC+Development+Centre!5e0!3m2!1sen!2sus!4v1547971918752"
+		        frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+		<p class="hidden">
+			<label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+		</p>
+		<p>
+			<label>Email: <input type="text" name="email"/></label>
+		</p>
+		<p>
+			<label>Message: <textarea name="message"></textarea></label>
+		</p>
+		<p>
+			<button type=”submit”>Send</button>
+		</p>
+	</form>
 </section>
 <footer class="site-footer">
-	<div class="copyright">Copyright &copy; <span class="copyright-year">2019</span>, Genre Limited
+	<div class="copyright">Copyright &copy; <span id="copyright-year">2019</span>, Genre Limited
 		(精銳創意有限公司). All Rights Reserved.
 	</div>
 </footer>
+<script>
+      document.getElementById('copyright-year').innerHTML = JSON.stringify(new Date().getFullYear())
+</script>
 </body>
 </html>
